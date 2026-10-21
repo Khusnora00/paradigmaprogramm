@@ -1,0 +1,142 @@
+[
+    {
+        "id": "1",
+        "name": "Python",
+        "credits": 5,
+        "prerequisites": [],
+        "schedule": ["Monday 09:00"]
+    },
+    {
+        "id": "2",
+        "name": "Algorithms",
+        "credits": 5,
+        "prerequisites": ["1"],
+        "schedule": ["Tuesday 10:00"]
+    },
+    {
+        "id": "3",
+        "name": "Databases",
+        "credits": 5,
+        "prerequisites": ["1"],
+        "schedule": ["Wednesday 11:00"]
+    },
+    {
+        "id": "4",
+        "name": "Computer Networks",
+        "credits": 5,
+        "prerequisites": [],
+        "schedule": ["Thursday 09:00"]
+    },
+    {
+        "id": "5",
+        "name": "Operating Systems",
+        "credits": 5,
+        "prerequisites": ["1"],
+        "schedule": ["Friday 10:00"]
+    },
+    {
+        "id": "6",
+        "name": "Mathematics",
+        "credits": 5,
+        "prerequisites": [],
+        "schedule": ["Monday 11:00"]
+    },
+    {
+        "id": "7",
+        "name": "Statistics",
+        "credits": 5,
+        "prerequisites": ["6"],
+        "schedule": ["Tuesday 12:00"]
+    },
+    {
+        "id": "8",
+        "name": "Machine Learning",
+        "credits": 5,
+        "prerequisites": ["1", "6"],
+        "schedule": ["Wednesday 13:00"]
+    },
+    {
+        "id": "9",
+        "name": "Artificial Intelligence",
+        "credits": 5,
+        "prerequisites": ["1", "2"],
+        "schedule": ["Thursday 11:00"]
+    },
+    {
+        "id": "10",
+        "name": "Data Analysis",
+        "credits": 5,
+        "prerequisites": ["6", "7"],
+        "schedule": ["Friday 12:00"]
+    },
+    {
+        "id": "11",
+        "name": "Cybersecurity",
+        "credits": 5,
+        "prerequisites": ["4"],
+        "schedule": ["Monday 13:00"]
+    },
+    {
+        "id": "12",
+        "name": "Web Development",
+        "credits": 5,
+        "prerequisites": ["1"],
+        "schedule": ["Tuesday 14:00"]
+    },
+    {
+        "id": "13",
+        "name": "Software Engineering",
+        "credits": 5,
+        "prerequisites": ["1", "2"],
+        "schedule": ["Wednesday 15:00"]
+    },
+    {
+        "id": "14",
+        "name": "Computer Vision",
+        "credits": 5,
+        "prerequisites": ["8"],
+        "schedule": ["Thursday 13:00"]
+    },
+    {
+        "id": "15",
+        "name": "Natural Language Processing",
+        "credits": 5,
+        "prerequisites": ["8"],
+        "schedule": ["Friday 14:00"]
+    },
+    {
+        "id": "16",
+        "name": "Deep Learning",
+        "credits": 5,
+        "prerequisites": ["8"],
+        "schedule": ["Monday 15:00"]
+    },
+    {
+        "id": "17",
+        "name": "Java Programming",
+        "credits": 5,
+        "prerequisites": [],
+        "schedule": ["Tuesday 16:00"]
+    },
+    {
+        "id": "18",
+        "name": "Cloud Computing",
+        "credits": 5,
+        "prerequisites": ["4"],
+        "schedule": ["Wednesday 17:00"]
+    },
+    {
+        "id": "19",
+        "name": "Information Systems",
+        "credits": 5,
+        "prerequisites": [],
+        "schedule": ["Thursday 15:00"]
+    },
+    {
+        "id": "20",
+        "name": "IT Project Management",
+        "credits": 5,
+        "prerequisites": [],
+        "schedule": ["Friday 16:00"]
+    }
+] 
