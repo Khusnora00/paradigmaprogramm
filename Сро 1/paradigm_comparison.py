@@ -6,12 +6,13 @@ def procedural_registration(student_name, course_name, registered_courses):
         return False, "Студент уже записан на эту дисциплину"
 
     registered_courses.append(course_name)
-    return True, student_name + " зарегистрирован на дисциплину " + course_name
+    return True, f"{student_name} зарегистрирован на дисциплину {course_name}"
 
 
 class Student:
-    def __init__(self, name):
+    def _init_(self, name, group=""):
         self.name = name
+        self.group = group
         self.registered_courses = []
 
     def register_course(self, course_name):
@@ -22,7 +23,7 @@ class Student:
             return False, "Студент уже записан на эту дисциплину"
 
         self.registered_courses.append(course_name)
-        return True, self.name + " зарегистрирован на дисциплину " + course_name
+        return True, f"{self.name} зарегистрирован на дисциплину {course_name}"
 
 
 def main():
@@ -30,30 +31,25 @@ def main():
     print("СРАВНЕНИЕ ПАРАДИГМ ПРОГРАММИРОВАНИЯ")
     print("=" * 45)
 
-    print("\n1. ПРОЦЕДУРНЫЙ ПОДХОД")
-
     courses = []
     success, message = procedural_registration(
         "Хуснора",
         "Искусственный интеллект",
-        courses
+        courses,
     )
-
+    print("\nПроцедурный подход:")
     print(message)
-    print("Список дисциплин:", courses)
+    print("Дисциплины:", courses)
 
-    print("\n2. ОБЪЕКТНО-ОРИЕНТИРОВАННЫЙ ПОДХОД")
-
-    student = Student("Хуснора")
+    student = Student("Хуснора", "ТИИ 25-21")
     success, message = student.register_course("Искусственный интеллект")
-
+    print("\nОбъектно-ориентированный подход:")
     print(message)
-    print("Список дисциплин:", student.registered_courses)
+    print("Группа:", student.group)
+    print("Дисциплины:", student.registered_courses)
 
-    print("\n3. СРАВНЕНИЕ")
-    print("Процедурный подход использует функции и отдельные данные.")
-    print("ООП объединяет данные и методы внутри объектов.")
-    print("Оба подхода решают одну задачу разными способами.")
+    print("\nПроцедурный подход использует функции и отдельные данные.")
+    print("ООП объединяет данные и методы в объектах.")
 
 
 if __name__ == "__main__":
